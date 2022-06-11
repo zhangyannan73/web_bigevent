@@ -1,0 +1,56 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background:url('../images/login_bg.jpg') no-repeat center;
+    /* 背景图像扩展至足够大，以完全覆盖背景区域 */
+    background-size: cover;  
+}
+
+.LoginAndRegBox{
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); /*往上（x轴）,左（y轴）移动自身长宽的 50%，以使其居于中心位置*/
+}
+
+.title-box{
+    height: 60px;
+    background: url('../images/login_title.png') no-repeat center;
+}
+
+.reg-box{
+    display: none;
+    
+}
+
+.layui-form{
+    padding: 0 30px;
+}
+
+.links {
+    /* 弹性盒子布局 */
+    display: flex; 
+    /* 定义项目在主轴上的对齐方式 flex-end右对齐/ */
+    justify-content: flex-end;
+}
+.links a{
+    font-size: 12px;
+}
+
+.layui-form-item{
+    position: relative;
+}
+.layui-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.layui-input{
+    padding-left: 30px;
+}
