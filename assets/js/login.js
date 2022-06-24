@@ -52,7 +52,7 @@ $(function(){
     $('#form_login').on('submit',function(e){
         e.preventDefault();
         $.ajax({
-            url:'http://www.liulongbin.top:3007/api/login',
+            url:'/api/login',
             method:'POST',
             data:$(this).serialize(),
             success:function(res){
@@ -61,7 +61,7 @@ $(function(){
                 }
                 layer.msg('登录成功！');
                 // 保存成功登录后得到的token字符串
-                localStorage.setItem("tokdn",res.token)
+                localStorage.setItem('token',res.token)
                 // 跳转到后台主页
                 location.href='/code/index.html'
             }
